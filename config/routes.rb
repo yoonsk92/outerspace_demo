@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'pages#home'
+  get 'friends', to: 'pages#friends'
+  get 'groups', to: 'pages#groups'
+  get 'bookmarks', to: 'pages#bookmarks'
+  get 'explore', to: 'pages#explore'
+  
 end
