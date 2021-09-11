@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#home'
   get 'friends', to: 'pages#friends'
   get 'groups', to: 'pages#groups'
